@@ -168,3 +168,12 @@ img {
         padding: 3rem 0; /* Aggiunge spazi di riempimento sopra e sotto di 3rem */
     }
 }
+
+/* Stili per dispositivi con larghezza massima di 768px o meno */
+@media screen and (max-width:768px){
+    /* Imposta la larghezza del contenitore al 100% */
+    .container{
+        width: 100%;
+    }
+    
+}
