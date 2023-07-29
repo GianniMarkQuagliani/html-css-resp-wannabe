@@ -178,7 +178,7 @@ img {
     
 }
 
-/* Stili per dispositivi con larghezza minima di 768px e larghezza massima di 1141px */
+/* Stili per dispositivi con larghezza minima di 768px e larghezza massima di 1160px */
 @media screen and (min-width:768px) and (max-width:1160px){
     /* Imposta la larghezza del contenitore al 100% */
     .container{
