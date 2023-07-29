@@ -127,3 +127,44 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+ /* Stili per dispositivi con larghezza massima di 480px o meno */
+@media screen and (max-width:480px){
+    /* Imposta la larghezza del contenitore al 100% */
+    .container{
+        width: 100%;
+    }
+
+    /* Imposta la direzione dei flex item della classe "row" a column */
+    .row{
+        flex-direction: column;
+    }
+
+    /* Imposta la larghezza al 100% per le colonne delle classi "lessons", "steps", "why-us" */
+    /* Per i dispositivi con schermi piccoli, gli elementi occupano tutta la larghezza disponibile */
+    .lessons .col, .steps .col, .why-us .col-left, .why-us .col-right{
+        width: 100%;
+    }
+
+    /* Aggiunge uno spazio inferiore di 3 rem ai paragrafi all'interno delle classi "lessons" */
+    /* Ciò aumenta lo spazio tra i paragrafi in dispositivi con schermi piccoli */
+    .lessons p{
+        margin-bottom: 3rem;
+    }
+
+    /* Rimuove lo spazio esterno (margin) dalla classe "steps" */
+    .steps{
+        margin: 0;
+    }
+
+    /* Aggiunge un margine superiore di 1 pixel all'elemento con classe "container" all'interno della classe "steps" */
+    .steps .container{
+        margin-top:  1px;
+    }
+
+    /* Modifica lo sfondo e gli spazi di margine nella classe "why-us" */
+    .why-us{
+        background-color: black; /* Sfondo nero */
+        margin-bottom: 0; /* Rimuove lo spazio inferiore */
+        padding: 3rem 0; /* Aggiunge spazi di riempimento sopra e sotto di 3rem */
+    }
+}
